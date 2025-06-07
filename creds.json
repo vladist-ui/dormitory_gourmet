@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "dormitory-gourmet",
+  "private_key_id": "289f984f7affd3e6c5ad5cf4e0ed7215fe27f67d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQColWCQqkbHQwNw\nYxPBDSbPufXBEPKU3Wr6u8yO+Dz76pmf+afZFP6TWTNeEvrb60BAJzaZx56Fh/m3\nSJJ/YnuNW+EfrvE/LCrDxP7mYLXMy0eedIjl3PZho4OiQHXUIlxqDacZcSyq/nm5\n12QTTbZA7uPCsdZdit4bPQBDRFv+OVwMiDtJEalQN2Fzs+8aORhlQT6Ns92YpyR7\nPxeLp29PJaR/yHXZ9E1bKzHK5dCRRc17UzOIPM6jgirMHv0LVhcvzvECVc9EYBDO\nmIAHOOwCM+06sQkUXXXd78toUBLBgwAbsNKK0oAS39hV68WQXBgFeU9RkZvl12og\nlj0qap+nAgMBAAECggEAA8v5dMig93Pm6+0PUNW+/gauJj7/d6LU+fiozr+AgBv0\ngcnZoeX7Jc5ofcHnrHRL6iX38NayF0fMs/gKdJv/NFvRYilKfaW9ANO6+e1LquUZ\nI9R0ENk9I03PdSQGg1SSyECudsA5xVAd5bWYJ2ckp6m5r3TZ4xlxjyN8kgdEGyGe\nL2NLvkdRZ6TrdhCPYla53T1R4wH9a6OO0qB15uqsHn1RXenTyR6vuP25Gx66gvgS\nYcDYUy9RAKJtiqqYkGctP69F75aI0YDzVxPq0owVFufoiqvqIaHzBPpbfXHU5d1F\n37RU5Obf7lhAijcl1fSEDOEYK6dJh6/SYir39qGKAQKBgQDjyix8UXUfy2byBvlS\nQGDeSxPf8/SkPNVhSnCZwxkXwAIAyHwQWSla1IszOe65sgW6iF62RGtRgXuyPaMe\nqlQbn+0TXXIwxlZ5YXpEg9qMiHkDIeyWppLEIy0lnra7obnsldC5zMfTa6eK6Z74\nbz4iicXh4tNQyG5m/LklBhGFwQKBgQC9diJQYp1JLbCtWJskU5Tld/ourIAEWZGC\nSpmsX7KVy/EE+goxpzcHZRLLxmn4vuORl4MLe2HChKOUHhHbFW6eGdn0CsqSsRHF\nNb7bWIuH47QSlN9dWPb7dHN6HVDIQsqCWyxOpGmTd1F4s8/qE4cQTFOBbA/z4NFp\nePZk32ePZwKBgGep/V7CL1w90+a3N8Wv2KWxYyUbP61ypeT13JKNUCEX15GFq7hA\n62oTqhmw9qx5kNPX9cpbDr/z/lgaZt6ww0AjIuAaObpquLXan6sImnA0N2YujR3u\nRoKOQ6CIPz7aleNONsQnppTXvFKiiR8keRF8w5pOAL8Vx/CEeLmZrmXBAoGAYBFZ\nvubyGBwZ3RvztszG0EAw1J/VXd9I4AcRuwzfUgOSV9KtfpXqWk6O5FLcgyvP2pA3\n+4d5f5egFkfVCADrETHMiWk7ZHxypUvmVfSk86erNEzWoc+tlL1snHvm7VSouMag\nRdQqUIMNBaYvg+KY9tOs+BAiWqghp1iVn3qEWXsCgYEAr6tYdI9ADxuYqJg1pXnE\nA1FBgUk6NlbGdvz8q6Ezxe+OkKlW/qzfcqvDMWhhvDuaGdnO4NcRYQ3kJXTJqgFR\nZeksEWUjQdwyz/NOH26NPNP/rctiH7udDkbg1VYUzSgWxCBNW9l3iuhecxVNgMtL\nJQhpMCNcYkgXvZa1q3uKqsw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dormitory-gourmet@dormitory-gourmet.iam.gserviceaccount.com",
+  "client_id": "116372351226493175170",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dormitory-gourmet%40dormitory-gourmet.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
