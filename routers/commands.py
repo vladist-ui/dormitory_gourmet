@@ -21,7 +21,7 @@ async def cmd_start(message: Message, sheets: GoogleSheetsClient):
     print(f"Processing /start command for user {message.from_user.id}")
     user_id = message.from_user.id
 
-    # Проверяем, существует ли пользователь
+
     users = sheets.get_all_users()
     user_exists = any(str(user["user_id"]) == str(user_id) for user in users)
 
@@ -29,14 +29,14 @@ async def cmd_start(message: Message, sheets: GoogleSheetsClient):
         print(f"Adding new user {user_id}")
         sheets.add_user(user_id)
 
-    # Получаем язык пользователя
+    #Язык пользователя
     user_language = next(
         (user["language"] for user in users if str(user["user_id"]) == str(user_id)),
         "ru",
     )
     print(f"User language: {user_language}")
 
-    # Отправляем приветственное сообщение
+    # Приветсвие
     await message.answer(
         f"Привет! Я бот для управления анонсами блюд.\n"
         f"Текущий язык: {user_language}\n"
@@ -90,7 +90,7 @@ async def cmd_send_menu(message: Message, sheets: GoogleSheetsClient, config: Co
         await message.answer("Нет пользователей для рассылки.")
         return
 
-    # Отправляем сообщение самому админу
+    # сообщение админу
     try:
         await message.answer(
             f"🍽 *{unsent[0]['Название блюда']}*\n\n"
@@ -104,7 +104,7 @@ async def cmd_send_menu(message: Message, sheets: GoogleSheetsClient, config: Co
     except Exception as e:
         print(f"Error sending message to admin: {e}")
 
-    # Отправляем остальным пользователям
+    # Отправка пользователям
     for announcement in unsent:
         print(f"Processing announcement: {announcement['Название блюда']}")
         for user in users:
@@ -177,7 +177,7 @@ async def process_payment(
         payment_screenshot=file_id,
     )
 
-    # Отправляем уведомление админам
+    # Отправка уведомления админам
     for admin_id in Config.tg_bot.admin_ids:
         try:
             await message.bot.send_photo(
@@ -291,7 +291,7 @@ async def cmd_nofood(message: Message, sheets: GoogleSheetsClient, config: Confi
 async def cmd_cancel(message: Message, sheets: GoogleSheetsClient, config: Config):
     print(f"Processing /cancel command from user {message.from_user.id}")
     
-    # Получаем последний заказ пользователя
+    # последний заказ пользователя
     last_order = sheets.get_last_user_order(message.from_user.id)
     if not last_order:
         await message.answer("У вас нет активных заказов для отмены.")

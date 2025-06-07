@@ -13,7 +13,7 @@ class GoogleSheetsClient:
         self.client = gspread.authorize(self.creds)
         self.spreadsheet = self.client.open("Gourmet")
 
-        # Проверяем наличие листа Users и создаем его, если нет
+        # Проверка наличие листа Users и создаем его, если нет
         try:
             users = self.get_worksheet("Users")
             # Проверяем заголовки
@@ -35,7 +35,7 @@ class GoogleSheetsClient:
         """Получить список всех пользователей"""
         try:
             users = self.get_worksheet("Users")
-            # Получаем все значения из таблицы
+            #  все значения из таблицы
             all_values = users.get_all_values()
             print(f"All values from Users: {all_values}")
 

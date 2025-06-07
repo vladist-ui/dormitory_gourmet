@@ -40,7 +40,7 @@ async def process_reserve(
             price=announcement["Цена"],
         )
 
-        # Отправляем сообщение с запросом количества порций
+        # Отправка сообщения с запросом количества порций
         await callback.message.edit_text(
             f"🍽 *{announcement['Название блюда']}*\n\n"
             f"💰 Цена за порцию: {announcement['Цена']}\n\n"
@@ -176,10 +176,10 @@ async def process_receipt(
 @router.callback_query(CancelCallback.filter())
 async def process_cancel(callback: CallbackQuery, state: FSMContext):
     try:
-        # Сбрасываем состояние
+
         await state.clear()
 
-        # Отправляем сообщение об отмене
+        # Отправка сообщения об отмене
         await callback.message.edit_text("❌ Бронирование отменено.", reply_markup=None)
 
     except Exception as e:
